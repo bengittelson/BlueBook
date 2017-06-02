@@ -1,0 +1,20 @@
+#application class:
+#instance variables: text, grade, ID
+#methods: getFile(fileName) --> return file, fileToText(file) --> return text
+
+#corpus class:
+#takes in a path to a folder with applications
+#instance variables: descriptive stats
+#methods: output to csv, calculate descriptive stats, get fileNames
+
+
+#grade superclass:
+#subclass that's the grade for this assignment
+
+def main():
+    from Classes.Application import Application
+    myApp = Application('/Users/benjamingittelson/Downloads/submissions/document (9).pdf')
+    myApp.getTextFromPDF()
+    print myApp.fileName
+
+main()
