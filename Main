@@ -14,8 +14,10 @@
 def main():
     from Classes.Application import Application
     myApp = Application('/Users/benjamingittelson/Downloads/submissions/document (9).pdf')
-    myApp.getTextFromPDF()
-    myApp.getTextWithSlate()
-    print myApp.fileName
+    # myApp.getTextFromPDF()
+    # myApp.getTextWithSlate()
+    myApp.getTextWithTextract()
+    myApp.getRelevantText()
+    myApp.getID()
 
 main()
